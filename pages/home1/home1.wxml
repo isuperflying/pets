@@ -1,0 +1,23 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">热门</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">PK榜</view>
+</view>
+
+
+<view class="content-home" hidden="{{!isShow}}">
+      <view class="img-list">
+          <view class="ul">
+              <view class="li" wx:for="{{array}}" wx:key="id" wx:for-item="item" bindtap='create' data-itmedata='{{item}}'>
+                  <view>
+                      <image src="{{item.petImageUrl}}" mode="widthFix" class='item-img'></image>
+                      <!-- <image src='../image/is_vip.png' class='is-vip' wx:if="{{item.is_vip == 1}}"></image> -->
+                      <text>{{item.petTitle}}</text>
+                      <view class="bg"></view>
+                  </view>
+              </view>
+          </view> 
+      </view>
+      <view class='load_more' wx:if="{{is_load_more}}"><image src='../image/load_more.gif' class='load_more_image'></image></view>
+</view>
+
+<view class="weui-cells__title" hidden="{{isShow}}">PK榜</view>
