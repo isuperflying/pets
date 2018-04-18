@@ -9,9 +9,9 @@
           <view class="ul">
               <view class="li" wx:for="{{array}}" wx:key="id" wx:for-item="item" bindtap='create' data-itmedata='{{item}}'>
                   <view>
-                      <image src="{{item.petImageUrl}}" mode="widthFix" class='item-img'></image>
+                      <image src="{{item.imageUrl}}" mode="widthFix" class='item-img'></image>
                       <!-- <image src='../image/is_vip.png' class='is-vip' wx:if="{{item.is_vip == 1}}"></image> -->
-                      <text>{{item.petTitle}}</text>
+                      <text>{{item.title || '火星用户'}}</text>
                       <view class="bg"></view>
                   </view>
               </view>

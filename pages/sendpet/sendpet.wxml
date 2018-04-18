@@ -1,0 +1,4 @@
+<view class='create_add_img'>
+  <label>选择图片:</label>
+  <image class="add_img" src='{{add_img}}' bindtap='selectImage'></image>
+</view>

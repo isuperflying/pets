@@ -35,7 +35,7 @@ Page({
     list = null;
     var Page$this = this;
     wx.request({
-      url: 'https://www.antleague.com/pets/getAllPetRecordService.action',
+      url: 'https://www.antleague.com/MyPetsServer/getPetList.action',
       method: 'GET',
       data: {
         'page': page

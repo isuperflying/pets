@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/sendpet/sendpet",
     "pages/home1/home1",
     "pages/home/home",
     "pages/index/index",
