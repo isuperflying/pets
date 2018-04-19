@@ -1,4 +1,15 @@
+
+
+
+<view class='title-show'>
+  <label>标题：</label>
+  <input placeholder="请输入标题" class='text-input' bindinput='bindKeyInput'></input>
+</view>
+<view class='content-show'>
+  <label>内容：</label>
+  <textarea class='content-text-input' placeholder='请输入内容'></textarea>
+</view>
 <view class='create_add_img'>
-  <label>选择图片:</label>
+  <label>图片：</label>
   <image class="add_img" src='{{add_img}}' bindtap='selectImage'></image>
 </view>

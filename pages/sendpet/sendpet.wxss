@@ -1,11 +1,84 @@
 .create_add_img{
   display: flex;
   flex-direction: row;
-  width: 92%;
-  margin-top: 14rpx;
-  justify-content: center
+  margin-top: 24rpx;
+  align-items: center
 }
-.add_img{
-  width: 100rpx;
+.create_add_img label{
+  display: block;
+  width: 20%;
   height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 24rpx;
+  align-self: center;
+  color: #515151;
+}
+
+.add_img{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.title-show{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  margin-top: 50rpx;
+}
+
+.title-show label{
+  display: block;
+  width: 20%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 24rpx;
+  align-self: center;
+  color: #515151;
+}
+
+.text-input {
+  display: block;
+  transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  border: #dbdbdb 1px solid;
+  border-radius: 3px;
+  outline: none;
+  width: 90%;
+  margin-left: 6rpx;
+  margin-right: 24rpx;
+  padding-left: 16rpx;
+  min-height: 72rpx;
+  line-height: 100rpx;
+  align-self: center;
+}
+.content-show{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content-show label{
+  display: block;
+  width: 20%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 24rpx;
+  align-self: center;
+  color: #515151;
+}
+.content-text-input {
+  display: block;
+  transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  border: #dbdbdb 1px solid;
+  border-radius: 3px;
+  outline: none;
+  width: 90%;
+  margin-top: 12rpx;
+  min-height: 72rpx;
+  padding: 16rpx;
+  margin-right: 24rpx;
+  align-self: center;
 }
