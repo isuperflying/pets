@@ -66,5 +66,10 @@ Page({
   onPullDownRefresh: function () {
     var Page$this = this;
     this.getHomeData(Page$this);
+  },
+  sendPet:function(){
+    wx.navigateTo({
+      url: '../sendpet/sendpet'
+    })
   }
 })

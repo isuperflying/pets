@@ -15,8 +15,8 @@
 }
 
 .add_img{
-  width: 200rpx;
-  height: 200rpx;
+  width: 250rpx;
+  height: 250rpx;
 }
 
 .title-show{
@@ -81,4 +81,22 @@
   padding: 16rpx;
   margin-right: 24rpx;
   align-self: center;
+}
+.send-bottom{
+  margin-top: 130rpx;
+}
+.send_button{
+  width: 90%;
+  border-radius: 16rpx;  
+  font-size:18px;
+  background-color:#f6da03; 
+  color:#555555;
+  overflow:hidden;
+  height:90rpx;
+  line-height: 90rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.send-hover {
+  background-color: #f6da13;
 }

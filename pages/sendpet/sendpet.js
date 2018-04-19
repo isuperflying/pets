@@ -10,6 +10,11 @@ Page({
     swidth: 0,
     sheight: 0
   },
+  onLoad:function(){
+    wx.setNavigationBarTitle({
+      title: '发帖',
+    })
+  },
   selectImage:function(){
     wx.chooseImage({
       count: 1, // 默认9
@@ -44,8 +49,6 @@ Page({
             //console.log("create fail--->" + JSON.stringify(res));
           }
         })
-
-
       }
     })
   }

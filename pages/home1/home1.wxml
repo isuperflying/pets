@@ -20,4 +20,6 @@
       <view class='load_more' wx:if="{{is_load_more}}"><image src='../image/load_more.gif' class='load_more_image'></image></view>
 </view>
 
+<image class='send_btn' src='../image/send_icon.png' bindtap='sendPet'></image>
+
 <view class="weui-cells__title" hidden="{{isShow}}">PK榜</view>
