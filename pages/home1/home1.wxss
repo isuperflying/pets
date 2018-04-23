@@ -104,8 +104,9 @@
   z-index: 2;
   width: 96%;
   padding: 0 2%;
-  height: 35px;
-  line-height: 35px;
+  height: 24px;
+  margin-left: 12rpx;
+  line-height: 24px;
   color: #fff;
 }
 
@@ -125,9 +126,9 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 35px;
+  height: 24px;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .send_btn {
@@ -140,4 +141,16 @@
   position: fixed;
   bottom: 2%;
   left:80%;
+}
+.load_more{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10rpx;
+}
+.load_more_image{
+  width: 400rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
 }

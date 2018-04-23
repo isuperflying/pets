@@ -3,7 +3,6 @@
     <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">PK榜</view>
 </view>
 
-
 <view class="content-home" hidden="{{!isShow}}">
       <view class="img-list">
           <view class="ul">

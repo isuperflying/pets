@@ -67,6 +67,38 @@ Page({
     var Page$this = this;
     this.getHomeData(Page$this);
   },
+
+  onReachBottom: function () {
+    wx.showLoading({
+      title: '加载中',
+    })
+    var Page$this = this;
+    page++;
+    console.log("page--->" +page);
+    wx.request({
+      url: 'https://www.antleague.com/MyPetsServer/getPetList.action',
+      method: 'GET',
+      data: {
+        'page': page
+      },
+      success: function (res) {
+        wx.hideLoading()
+        list = list.concat(res.data.data);
+        Page$this.setData({
+          array: list,
+          is_load_more: false
+        });
+      },
+      fail: function (res) {
+        wx.hideLoading()
+        is_load_more: false
+      }
+    })
+    this.setData({
+      is_load_more: true
+    })
+  },
+
   sendPet:function(){
     wx.navigateTo({
       url: '../sendpet/sendpet'

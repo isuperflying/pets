@@ -67,7 +67,8 @@ Page({
       name: 'petFile',
       filePath: upFilePath,
       formData: {
-        'id': '1'
+        'petRecord.title': title,
+        'petRecord.petContent':content
       },
       success: function (res) {
         
